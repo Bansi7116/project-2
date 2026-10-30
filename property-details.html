@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>HavenHub | All Properties</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <h2>🏠 HavenHub</h2>
+        </div>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="properties.html">Properties</a>
+            </li>
+
+            <li>
+                <a href="login.html">Login</a>
+            </li>
+
+            <li>
+                <a href="register.html">Register</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =========================
+     PAGE TITLE
+========================= -->
+
+<section class="properties-header">
+
+    <h1>Find Your Perfect Property</h1>
+
+    <p>
+        Explore our collection of rental homes,
+        apartments and villas.
+    </p>
+
+</section>
+
+
+
+<!-- =========================
+     FILTER SECTION
+========================= -->
+
+<section class="filter-section">
+
+    <h2>Search & Filter</h2>
+
+
+    <div class="filters">
+
+
+        <!-- Search -->
+
+        <input
+            type="text"
+            id="propertySearch"
+            placeholder="Search property or city..."
+            onkeyup="filterProperties()"
+        >
+
+
+        <!-- City -->
+
+        <select
+            id="cityFilter"
+            onchange="filterProperties()">
+
+            <option value="all">
+                All Cities
+            </option>
+
+            <option value="ahmedabad">
+                Ahmedabad
+            </option>
+
+            <option value="surat">
+                Surat
+            </option>
+
+            <option value="rajkot">
+                Rajkot
+            </option>
+
+            <option value="vadodara">
+                Vadodara
+            </option>
+
+            <option value="mumbai">
+                Mumbai
+            </option>
+
+            <option value="delhi">
+                Delhi
+            </option>
+
+            <option value="pune">
+                Pune
+            </option>
+
+            <option value="jaipur">
+                Jaipur
+            </option>
+
+            <option value="udaipur">
+                Udaipur
+            </option>
+
+            <option value="bengaluru">
+                Bengaluru
+            </option>
+
+        </select>
+
+
+        <!-- Property Type -->
+
+        <select
+            id="typeFilter"
+            onchange="filterProperties()">
+
+            <option value="all">
+                All Property Types
+            </option>
+
+            <option value="apartment">
+                Apartment
+            </option>
+
+            <option value="villa">
+                Villa
+            </option>
+
+            <option value="house">
+                Independent House
+            </option>
+
+            <option value="studio">
+                Studio
+            </option>
+
+            <option value="penthouse">
+                Penthouse
+            </option>
+
+            <option value="duplex">
+                Duplex
+            </option>
+
+        </select>
+
+
+        <!-- Rent -->
+
+        <select
+            id="rentFilter"
+            onchange="filterProperties()">
+
+            <option value="all">
+                Any Rent
+            </option>
+
+            <option value="15000">
+                Under ₹15,000
+            </option>
+
+            <option value="25000">
+                Under ₹25,000
+            </option>
+
+            <option value="40000">
+                Under ₹40,000
+            </option>
+
+            <option value="60000">
+                Under ₹60,000
+            </option>
+
+        </select>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PROPERTY LIST
+========================= -->
+
+<section class="property-section">
+
+
+    <div
+        class="property-container"
+        id="propertyContainer">
+
+
+        <!-- =================
+             PROPERTY 1
+        ================= -->
+
+        <div
+            class="property-card"
+            data-city="ahmedabad"
+            data-type="apartment"
+            data-rent="18000">
+
+            <img
+                src="apart1.jpg"
+                alt="Luxury Apartment">
+
+            <div class="property-info">
+
+                <span class="badge">
+                    Apartment
+                </span>
+
+                <h3>
+                    Luxury 2 BHK Apartment
+                </h3>
+
+                <p class="property-location">
+                    📍 Ahmedabad, Gujarat
+                </p>
+
+                <p>
+                    🛏️ 2 BHK &nbsp; | &nbsp;
+                    🚿 2 Bath
+                </p>
+
+                <p>
+                    📐 1,200 sq ft
+                </p>
+
+                <h3 class="property-price">
+                    ₹18,000
+                    <small>/ Month</small>
+                </h3>
+
+            
+
+             
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================
+             PROPERTY 2
+        ================= -->
+
+        <div
+            class="property-card"
+            data-city="surat"
+            data-type="villa"
+            data-rent="35000">
+
+            <img
+                src="mvilla.jpg"
+                alt="Modern Villa">
+
+            <div class="property-info">
+
+                <span class="badge">
+                    Villa
+                </span>
+
+                <h3>
+                    Modern 4 BHK Villa
+                </h3>
+
+                <p class="property-location">
+                    📍 Surat, Gujarat
+                </p>
+
+                <p>
+                    🛏️ 4 BHK &nbsp; | &nbsp;
+                    🚿 3 Bath
+                </p>
+
+                <p>
+                    📐 2,400 sq ft
+                </p>
+
+                <h3 class="property-price">
+                    ₹35,000
+                    <small>/ Month</small>
+                </h3>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================
+             PROPERTY 3
+        ================= -->
+
+        <div
+            class="property-card"
+            data-city="rajkot"
+            data-type="house"
+            data-rent="22000">
+
+            <img
+                src="fhouse.jpg"
+                alt="Family House">
+
+            <div class="property-info">
+
+                <span class="badge">
+                    Independent House
+                </span>
+
+                <h3>
+                    Spacious Family House
+                </h3>
+
+                <p class="property-location">
+                    📍 Rajkot, Gujarat
+                </p>
+
+                <p>
+                    🛏️ 3 BHK &nbsp; | &nbsp;
+                    🚿 2 Bath
+                </p>
+
+                <p>
+                    📐 1,800 sq ft
+                </p>
+
+                <h3 class="property-price">
+                    ₹22,000
+                    <small>/ Month</small>
+                </h3>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================
+             PROPERTY 4
+        ================= -->
+
+        <div
+            class="property-card"
+            data-city="vadodara"
+            data-type="apartment"
+            data-rent="16000">
+
+            <img
+                src="apart2.jpg"
+                alt="2 BHK Flat">
+
+            <div class="property-info">
+
+                <span class="badge">
+                    Apartment
+                </span>
+
+                <h3>
+                    Affordable 2 BHK Flat
+                </h3>
+
+                <p class="property-location">
+                    📍 Vadodara, Gujarat
+                </p>
+
+                <p>
+                    🛏️ 2 BHK &nbsp; | &nbsp;
+                    🚿 2 Bath
+                </p>
+
+                <p>
+                    📐 1,050 sq ft
+                </p>
+
+                <h3 class="property-price">
+                    ₹16,000
+                    <small>/ Month</small>
+                </h3>
+
+              
+            </div>
+
+        </div>
+
+
+
+        <!-- =================
+             PROPERTY 5
+        ================= -->
+
+        <div
+            class="property-card"
+            data-city="mumbai"
+            data-type="studio"
+            data-rent="25000">
+
+            <img
+                src="sapart.jpg"
+                alt="Studio Apartment">
+
+            <div class="property-info">
+
+                <span class="badge">
+                    Studio
+                </span>
+
+                <h3>
+                    Fully Furnished Studio
+                </h3>
+
+                <p class="property-location">
+                    📍 Mumbai, Maharashtra
+                </p>
+
+                <p>
+                    🛏️ Studio &nbsp; | &nbsp;
+                    🚿 1 Bath
+                </p>
+
+                <p>
+                    📐 550 sq ft
+                </p>
+
+                <h3 class="property-price">
+                    ₹25,000
+                    <small>/ Month</small>
+                </h3>
+                
+            </div>
+
+        </div>
+
+
+
+        <!-- =================
+             PROPERTY 6
+        ================= -->
+
+        <div
+            class="property-card"
+            data-city="delhi"
+            data-type="penthouse"
+            data-rent="60000">
+
+            <img
+                src="phouse.jpg"
+                alt="Luxury Penthouse">
+
+            <div class="property-info">
+
+                <span class="badge">
+                    Penthouse
+                </span>
+
+                <h3>
+                    Premium Luxury Penthouse
+                </h3>
+
+                <p class="property-location">
+                    📍 Delhi
+                </p>
+
+                <p>
+                    🛏️ 4 BHK &nbsp; | &nbsp;
+                    🚿 4 Bath
+                </p>
+
+                <p>
+                    📐 3,200 sq ft
+                </p>
+
+                <h3 class="property-price">
+                    ₹60,000
+                    <small>/ Month</small>
+                </h3>
+                
+            </div>
+
+        </div>
+
+
+
+        <!-- =================
+             PROPERTY 7
+        ================= -->
+
+        <div
+            class="property-card"
+            data-city="pune"
+            data-type="villa"
+            data-rent="32000">
+
+            <img
+                src="gvilla.jpg"
+                alt="Garden Villa">
+
+            <div class="property-info">
+
+                <span class="badge">
+                    Villa
+                </span>
+
+                <h3>
+                    Beautiful Garden Villa
+                </h3>
+
+                <p class="property-location">
+                    📍 Pune, Maharashtra
+                </p>
+
+                <p>
+                    🛏️ 3 BHK &nbsp; | &nbsp;
+                    🚿 3 Bath
+                </p>
+
+                <p>
+                    📐 2,100 sq ft
+                </p>
+
+                <h3 class="property-price">
+                    ₹32,000
+                    <small>/ Month</small>
+                </h3>
+            
+            </div>
+
+        </div>
+
+
+
+        <!-- =================
+             PROPERTY 8
+        ================= -->
+
+        <div
+            class="property-card"
+            data-city="jaipur"
+            data-type="apartment"
+            data-rent="12000">
+
+            <img
+                src="bflat.jpg"
+                alt="Budget Flat">
+
+            <div class="property-info">
+
+                <span class="badge">
+                    Apartment
+                </span>
+
+                <h3>
+                    Budget Friendly 2 BHK
+                </h3>
+
+                <p class="property-location">
+                    📍 Jaipur, Rajasthan
+                </p>
+
+                <p>
+                    🛏️ 2 BHK &nbsp; | &nbsp;
+                    🚿 1 Bath
+                </p>
+
+                <p>
+                    📐 900 sq ft
+                </p>
+
+                <h3 class="property-price">
+                    ₹12,000
+                    <small>/ Month</small>
+                </h3>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================
+             PROPERTY 9
+        ================= -->
+
+        <div
+            class="property-card"
+            data-city="udaipur"
+            data-type="apartment"
+            data-rent="28000">
+
+            <img
+                src="lapart.jpg"
+                alt="Lake View Apartment">
+
+            <div class="property-info">
+
+                <span class="badge">
+                    Premium Apartment
+                </span>
+
+                <h3>
+                    Lake View 3 BHK Apartment
+                </h3>
+
+                <p class="property-location">
+                    📍 Udaipur, Rajasthan
+                </p>
+
+                <p>
+                    🛏️ 3 BHK &nbsp; | &nbsp;
+                    🚿 2 Bath
+                </p>
+
+                <p>
+                    📐 1,500 sq ft
+                </p>
+
+                <h3 class="property-price">
+                    ₹28,000
+                    <small>/ Month</small>
+                </h3>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================
+             PROPERTY 10
+        ================= -->
+
+        <div
+            class="property-card"
+            data-city="bengaluru"
+            data-type="duplex"
+            data-rent="40000">
+
+            <img
+                src="premiun.jpg"
+                alt="Premium Duplex">
+
+            <div class="property-info">
+
+                <span class="badge">
+                    Duplex
+                </span>
+
+                <h3>
+                    Premium 4 BHK Duplex
+                </h3>
+
+                <p class="property-location">
+                    📍 Bengaluru, Karnataka
+                </p>
+
+                <p>
+                    🛏️ 4 BHK &nbsp; | &nbsp;
+                    🚿 3 Bath
+                </p>
+
+                <p>
+                    📐 2,500 sq ft
+                </p>
+
+                <h3 class="property-price">
+                    ₹40,000
+                    <small>/ Month</small>
+                </h3>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- No Results -->
+
+    <p
+        id="noResults"
+        class="no-results">
+
+        No properties found.
+
+    </p>
+
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <p>
+        © 2026 HavenHub | Property Rental Website
+    </p>
+
+</footer>
+
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+
+/* ==========================
+   PROPERTY FILTER
+========================== */
+
+function filterProperties() {
+
+
+    let search =
+        document
+        .getElementById("propertySearch")
+        .value
+        .toLowerCase();
+
+
+    let city =
+        document
+        .getElementById("cityFilter")
+        .value;
+
+
+    let type =
+        document
+        .getElementById("typeFilter")
+        .value;
+
+
+    let rent =
+        document
+        .getElementById("rentFilter")
+        .value;
+
+
+    let properties =
+        document
+        .querySelectorAll(".property-card");
+
+
+    let count = 0;
+
+
+    properties.forEach(function(property) {
+
+
+        let propertyCity =
+            property.dataset.city;
+
+
+        let propertyType =
+            property.dataset.type;
+
+
+        let propertyRent =
+            Number(property.dataset.rent);
+
+
+        let propertyText =
+            property.innerText.toLowerCase();
+
+
+        let searchMatch =
+            propertyText.includes(search);
+
+
+        let cityMatch =
+            city === "all" ||
+            propertyCity === city;
+
+
+        let typeMatch =
+            type === "all" ||
+            propertyType === type;
+
+
+        let rentMatch =
+            rent === "all" ||
+            propertyRent <= Number(rent);
+
+
+        if (
+            searchMatch &&
+            cityMatch &&
+            typeMatch &&
+            rentMatch
+        ) {
+
+            property.style.display = "block";
+
+            count++;
+
+        }
+
+        else {
+
+            property.style.display = "none";
+
+        }
+
+    });
+
+
+    if (count === 0) {
+
+        document
+        .getElementById("noResults")
+        .style.display = "block";
+
+    }
+
+    else {
+
+        document
+        .getElementById("noResults")
+        .style.display = "none";
+
+    }
+
+}
+
+
+
+
+/* ==========================
+   VIEW PROPERTY DETAILS
+========================== */
+
+function openProperty(propertyName) {
+
+
+    /*
+       For now the details page
+       shows the main demo property.
+
+       Later we can connect every
+       property to its own details.
+    */
+
+
+    localStorage.setItem(
+        "selectedProperty",
+        propertyName
+    );
+
+
+    window.location.href =
+        "property-details.html";
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>

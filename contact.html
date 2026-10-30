@@ -1,0 +1,235 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HavenHub | Contact Us</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <h2>🏠 HavenHub</h2>
+            </div>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="properties.html">Properties</a>
+                </li>
+
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+
+                <li>
+                    <a href="register.html">Register</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Contact Hero -->
+
+    <section class="contact-hero">
+
+        <h1>Contact HavenHub</h1>
+
+        <p>
+            Have questions about a property?
+            We are here to help.
+        </p>
+
+    </section>
+
+
+    <!-- Contact Section -->
+
+    <section class="contact-container">
+
+        <!-- Contact Information -->
+
+        <div class="contact-info">
+
+            <h2>Get In Touch</h2>
+
+            <p>
+                Contact us for property details,
+                rental information or any other queries.
+            </p>
+
+            <div class="info-box">
+
+                <h3>📍 Address</h3>
+
+                <p>
+                    HavenHub Property Services,<br>
+                    Ahmedabad, Gujarat, India
+                </p>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <h3>📞 Phone</h3>
+
+                <p>
+                    +91 98765 43210
+                </p>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <h3>📧 Email</h3>
+
+                <p>
+                    support@havenhub.com
+                </p>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <h3>🕐 Working Hours</h3>
+
+                <p>
+                    Monday - Saturday<br>
+                    9:00 AM - 7:00 PM
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Contact Form -->
+
+        <div class="contact-form">
+
+            <h2>Send Us a Message</h2>
+
+            <form id="contactForm">
+
+                <label>Full Name</label>
+
+                <input
+                    type="text"
+                    id="contactName"
+                    placeholder="Enter your name"
+                    required
+                >
+
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    id="contactEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <label>Phone Number</label>
+
+                <input
+                    type="tel"
+                    id="contactPhone"
+                    placeholder="Enter your phone number"
+                    required
+                >
+
+
+                <label>Subject</label>
+
+                <input
+                    type="text"
+                    id="contactSubject"
+                    placeholder="Enter subject"
+                    required
+                >
+
+
+                <label>Message</label>
+
+                <textarea
+                    id="contactMessage"
+                    rows="6"
+                    placeholder="Write your message..."
+                    required
+                ></textarea>
+
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 HavenHub | Property Rental Website
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script>
+
+        document
+        .getElementById("contactForm")
+        .addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            let name =
+                document.getElementById("contactName").value;
+
+            alert(
+                "Thank you, " + name +
+                "! Your message has been sent successfully."
+            );
+
+            document
+                .getElementById("contactForm")
+                .reset();
+
+        });
+
+    </script>
+
+</body>
+
+</html>

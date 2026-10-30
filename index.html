@@ -1,0 +1,181 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HavenHub - Property Rental</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <h2>🏠 HavenHub</h2>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>Find Your Dream Rental Home</h1>
+
+            <p>
+                Search thousands of apartments,
+                villas and houses available for rent.
+            </p>
+
+            <a href="properties.html" class="btn">
+                Browse Properties
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Search -->
+
+    <section class="search">
+
+        <h2>Search Property</h2>
+
+        <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by city..."
+        onkeyup="searchProperty()">
+
+    </section>
+
+    <!-- Featured Properties -->
+
+    <section class="property-section">
+
+        <h2>Featured Properties</h2>
+
+        <div class="property-container">
+
+            <div class="card">
+
+                <img src="apart1.jpg" alt="House">
+
+                <h3>Luxury Apartment</h3>
+
+                <p class="city">Ahmedabad</p>
+
+                <p>₹20,000 / Month</p>
+
+                <button onclick="rentNow()">
+                    Rent Now
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="mvilla.jpg" alt="House">
+
+                <h3>Modern Villa</h3>
+
+                <p class="city">Surat</p>
+
+                <p>₹35,000 / Month</p>
+
+                <button onclick="rentNow()">
+                    Rent Now
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="fhouse.jpg" alt="House">
+
+                <h3>Family House</h3>
+
+                <p class="city">Rajkot</p>
+
+                <p>₹22,000 / Month</p>
+
+                <button onclick="rentNow()">
+                    Rent Now
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="apart2.jpg" alt="House">
+
+                <h3>2 BHK Flat</h3>
+
+                <p class="city">Vadodara</p>
+
+                <p>₹16,000 / Month</p>
+
+                <button onclick="rentNow()">
+                    Rent Now
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Why Choose Us -->
+
+    <section class="services">
+
+        <h2>Why Choose HavenHub?</h2>
+
+        <div class="service-box">
+
+            <div class="service">
+                <h3>Verified Properties</h3>
+                <p>Every property is verified before listing.</p>
+            </div>
+
+            <div class="service">
+                <h3>Affordable Rent</h3>
+                <p>Find homes according to your budget.</p>
+            </div>
+
+            <div class="service">
+                <h3>24/7 Support</h3>
+                <p>Our team is always ready to help.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 HavenHub. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
